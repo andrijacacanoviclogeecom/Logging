@@ -18,9 +18,9 @@ namespace Microsoft.Extensions.Logging
             // 1. Select rules for current logger type, if there is none, select ones without logger type specified
             // 2. Select rules with longest matching categories
             // 3. If there nothing matched by category take all rules without category
-            // 3. If there is only one rule use it's level and filter
-            // 4. If there are multiple rules use last
-            // 5. If there are no applicable rules use global minimal level
+            // 4. If there is only one rule use it's level and filter
+            // 5. If there are multiple rules use last
+            // 6. If there are no applicable rules use global minimal level
 
             var providerAlias = ProviderAliasUtilities.GetAlias(providerType);
             LoggerFilterRule current = null;
